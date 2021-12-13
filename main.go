@@ -153,7 +153,7 @@ func main() {
 	})
 
 	router.POST("/upload", UploadImage)
-	router.GET("/tes", TestDownlod)
+	router.GET("/download", TestDownlod)
 
 	router.LoadHTMLGlob("templates/*")
 	router.GET("/image", func(c *gin.Context) {
